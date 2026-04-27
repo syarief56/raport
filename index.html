@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raport XB</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-dark bg-primary">
+  <div class="container">
+    <span class="navbar-brand mb-0 h1">Raport XB</span>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <div class="row g-4">
+
+    <!-- FILE 1 -->
+    <div class="col-md-4">
+      <div class="card text-center shadow">
+        <div class="card-body">
+          <h5>Abdul Gafur</h5>
+          <button class="btn btn-primary" onclick="cekPassword('abdulgafur123','Lc:\Users\ok\Documents\raport\abdul gafur.pdf')">Buka File</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FILE 2 -->
+    <div class="col-md-4">
+      <div class="card text-center shadow">
+        <div class="card-body">
+          <h5>Raport Semester 2</h5>
+          <button class="btn btn-success" onclick="cekPassword('pass2','LINK_GOOGLE_DRIVE_2')">Buka File</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FILE 3 -->
+    <div class="col-md-4">
+      <div class="card text-center shadow">
+        <div class="card-body">
+          <h5>Raport Semester 3</h5>
+          <button class="btn btn-danger" onclick="cekPassword('pass3','LINK_GOOGLE_DRIVE_3')">Buka File</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- SCRIPT PASSWORD -->
+<script>
+function cekPassword(passwordBenar, linkFile) {
+  let input = prompt("Masukkan kata sandi:");
+
+  if (input === passwordBenar) {
+    window.open(linkFile, "_blank");
+  } else if (input !== null) {
+    alert("Password salah!");
+  }
+}
+</script>
+
+</body>
+</html>
