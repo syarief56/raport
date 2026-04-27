@@ -5,12 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Raport XB</title>
 
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: #f5f7fa;
+    }
+
+    .custom-card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .custom-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .nama {
+      font-weight: bold;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+      margin-bottom: 15px;
+    }
+  </style>
 </head>
+
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-dark bg-primary">
+<nav class="navbar navbar-dark bg-primary shadow">
   <div class="container">
     <span class="navbar-brand mb-0 h1">Raport XB</span>
   </div>
@@ -19,130 +45,143 @@
 <div class="container mt-4">
   <div class="row g-4">
 
-    <!-- FILE 1 -->
-    <div class="col-md-4">
-      <div class="card text-center shadow">
-        <div class="card-body">
-          <h5>ABDUL GAFUR</h5>
-          <button class="btn btn-primary" onclick="cekPassword('ABDUL GAFUR123','https://drive.google.com/file/d/19RDh50BF542KEfaaEvMy0yJwS6vSTeUb/view?usp=sharing')">Buka File</button>
-        </div>
-      </div>
-    </div>
+    <!-- DATA SISWA -->
 
-    <!-- FILE 2 -->
-    <div class="col-md-4">
-      <div class="card text-center shadow">
-        <div class="card-body">
-          <h5>AFIFATUL HASANAH</h5>
-          <button class="btn btn-success" onclick="cekPassword('AFIFATUL HASANAH123','https://drive.google.com/file/d/13uXDZedVwvBPD40L1RlJuE5LS1PYQW1d/view?usp=sharing')">Buka File</button>
-        </div>
-      </div>
-    </div>
+    <!-- 1 -->
+    <div class="col-md-4 col-lg-3"><div class="card text-center custom-card"><div class="card-body">
+    <h5 class="nama">ABDUL GAFUR</h5>
+    <button class="btn btn-primary w-100" onclick="cekPassword('ABDUL GAFUR123','https://drive.google.com/file/d/19RDh50BF542KEfaaEvMy0yJwS6vSTeUb/view')">Buka File</button>
+    </div></div></div>
 
-    <!-- FILE 3 -->
-    <div class="col-md-4">
-      <div class="card text-center shadow">
-        <div class="card-body">
-          <h5>AHMAD SAIFUL BAHRI</h5>
-          <button class="btn btn-danger" onclick="cekPassword('AHMAD SAIFUL BAHRI123','https://drive.google.com/file/d/1DUXlWF-ZufuNPG2zAt2k5XwxapeLDiqv/view?usp=sharing')">Buka File</button>
-        </div>
-      </div>
-    </div>
+    <!-- 2 -->
+    <div class="col-md-4 col-lg-3"><div class="card text-center custom-card"><div class="card-body">
+    <h5 class="nama">AFIFATUL HASANAH</h5>
+    <button class="btn btn-success w-100" onclick="cekPassword('AFIFATUL HASANAH123','https://drive.google.com/file/d/13uXDZedVwvBPD40L1RlJuE5LS1PYQW1d/view')">Buka File</button>
+    </div></div></div>
 
-        <div class="col-md-4">
-      <div class="card text-center shadow">
-        <div class="card-body">
-          <h5>DINA PUTRI RAMADANI</h5>
-          <button class="btn btn-primary" onclick="cekPassword('DINA PUTRI RAMADANI123','https://drive.google.com/file/d/142yfTtcO5vtD18S4U8MGp8Nj_9END2k6/view?usp=drive_link')">Buka File</button>
-        </div>
-      </div>
-    </div>
+    <!-- 3 -->
+    <div class="col-md-4 col-lg-3"><div class="card text-center custom-card"><div class="card-body">
+    <h5 class="nama">AHMAD SAIFUL BAHRI</h5>
+    <button class="btn btn-danger w-100" onclick="cekPassword('AHMAD SAIFUL BAHRI123','https://drive.google.com/file/d/1DUXlWF-ZufuNPG2zAt2k5XwxapeLDiqv/view')">Buka File</button>
+    </div></div></div>
 
-    <!-- FILE 2 -->
-    <div class="col-md-4">
-      <div class="card text-center shadow">
-        <div class="card-body">
-          <h5>JUWARIYAH KAMILA QOTRUN NADA</h5>
-          <button class="btn btn-success" onclick="cekPassword('JUWARIYAH KAMILA QOTRUN NADA123','https://drive.google.com/file/d/1W6b_EwlAhz-9gM_ZGVKjDzEtkNllYFXk/view?usp=drive_link')">Buka File</button>
-        </div>
-      </div>
-    </div>
+    <!-- 4 -->
+    <div class="col-md-4 col-lg-3"><div class="card text-center custom-card"><div class="card-body">
+    <h5 class="nama">DINA PUTRI RAMADANI</h5>
+    <button class="btn btn-primary w-100" onclick="cekPassword('DINA PUTRI RAMADANI123','https://drive.google.com/file/d/142yfTtcO5vtD18S4U8MGp8Nj_9END2k6/view')">Buka File</button>
+    </div></div></div>
 
-    <!-- FILE 3 -->
-    <div class="col-md-4">
-      <div class="card text-center shadow">
-        <div class="card-body">
-          <h5>MOHAMMAD ADAM MALIK</h5>
-          <button class="btn btn-danger" onclick="cekPassword('MOHAMMAD ADAM MALIK123','https://drive.google.com/file/d/1VzqO7pFXlMN0XfGcH9nhlSr_K6JQq_NL/view?usp=drive_link')">Buka File</button>
-        </div>
-      </div>
-    </div>
+    <!-- 5 -->
+    <div class="col-md-4 col-lg-3"><div class="card text-center custom-card"><div class="card-body">
+    <h5 class="nama">JUWARIYAH KAMILA QOTRUN NADA</h5>
+    <button class="btn btn-success w-100" onclick="cekPassword('JUWARIYAH KAMILA QOTRUN NADA123','https://drive.google.com/file/d/1W6b_EwlAhz-9gM_ZGVKjDzEtkNllYFXk/view')">Buka File</button>
+    </div></div></div>
+
+    <!-- 6 -->
+    <div class="col-md-4 col-lg-3"><div class="card text-center custom-card"><div class="card-body">
+    <h5 class="nama">MOHAMMAD ADAM MALIK</h5>
+    <button class="btn btn-danger w-100" onclick="cekPassword('MOHAMMAD ADAM MALIK123','https://drive.google.com/file/d/1VzqO7pFXlMN0XfGcH9nhlSr_K6JQq_NL/view')">Buka File</button>
+    </div></div></div>
+
+    <!-- 7 -->
+    <div class="col-md-4 col-lg-3"><div class="card text-center custom-card"><div class="card-body">
+    <h5 class="nama">MOHAMMAD FADLILAH</h5>
+    <button class="btn btn-primary w-100" onclick="cekPassword('MOHAMMAD FADLILAH123','https://drive.google.com/file/d/1tpAsG-x1pWQdH4sBQoEQSLK98CEntFGp/view')">Buka File</button>
+    </div></div></div>
+
+    <!-- 8 -->
+    <div class="col-md-4 col-lg-3"><div class="card text-center custom-card"><div class="card-body">
+    <h5 class="nama">MOHAMMAD FIRMANSYAH</h5>
+    <button class="btn btn-success w-100" onclick="cekPassword('MOHAMMAD FIRMANSYAH123','https://drive.google.com/file/d/1mp8Ea6ZehblmyLYWYt6rd2gTYqppwJSL/view')">Buka File</button>
+    </div></div></div>
+
+    <!-- 9 -->
+    <div class="col-md-4 col-lg-3"><div class="card text-center custom-card"><div class="card-body">
+    <h5 class="nama">MUHAMMAD DAHLAN</h5>
+    <button class="btn btn-danger w-100" onclick="cekPassword('MUHAMMAD DAHLAN123','https://drive.google.com/file/d/18uuH8nLqz4vDZ-toOTkwGo2LIqAdDlCc/view')">Buka File</button>
+    </div></div></div>
+
+    <!-- 10 -->
+    <div class="col-md-4 col-lg-3"><div class="card text-center custom-card"><div class="card-body">
+    <h5 class="nama">MOHAMMAD DWI BAGUS</h5>
+    <button class="btn btn-primary w-100" onclick="cekPassword('MOHAMMAD DWI BAGUS123','https://drive.google.com/file/d/1wWwOY85F4HIPD-JuxsnphdqdaIk2YHrl/view')">Buka File</button>
+    </div></div></div>
+
+    <!-- 11 -->
+    <div class="col-md-4 col-lg-3"><div class="card text-center custom-card"><div class="card-body">
+    <h5 class="nama">MUHAMMAD GILANG</h5>
+    <button class="btn btn-success w-100" onclick="cekPassword('MUHAMMAD GILANG123','https://drive.google.com/file/d/1qwzbQuqDg1Lc-7-NhdK7-s3-_zUxwQ4R/view')">Buka File</button>
+    </div></div></div>
+
+    <!-- 12 -->
+    <div class="col-md-4 col-lg-3"><div class="card text-center custom-card"><div class="card-body">
+    <h5 class="nama">MUHAMMAD ILHAMULLAH</h5>
+    <button class="btn btn-danger w-100" onclick="cekPassword('MUHAMMAD ILHAMULLAH123','https://drive.google.com/file/d/1eAXFa6TcokVvMLtr42nqGYG-4mSD_3-B/view')">Buka File</button>
+    </div></div></div>
+
+    <!-- 13 -->
+    <div class="col-md-4 col-lg-3"><div class="card text-center custom-card"><div class="card-body">
+    <h5 class="nama">MUHAMMAD MISBAHUL MUNIR</h5>
+    <button class="btn btn-primary w-100" onclick="cekPassword('MUHAMMAD MISBAHUL MUNIR123','https://drive.google.com/file/d/1ND-24DfNHFtsLOLST_thN0xB58XipoAY/view')">Buka File</button>
+    </div></div></div>
+
+    <!-- 14 -->
+    <div class="col-md-4 col-lg-3"><div class="card text-center custom-card"><div class="card-body">
+    <h5 class="nama">NUR DEWA PRAMESWARA DASA SAPUTRA</h5>
+    <button class="btn btn-success w-100" onclick="cekPassword('NUR DEWA PRAMESWARA DASA SAPUTRA123','https://drive.google.com/file/d/1XsIflIAUsjBzEMkmjDltRdzdk4Q_DdFq/view')">Buka File</button>
+    </div></div></div>
+
+    <!-- 15 -->
+    <div class="col-md-4 col-lg-3"><div class="card text-center custom-card"><div class="card-body">
+    <h5 class="nama">PUTRI ADIATUL MAHIRAH</h5>
+    <button class="btn btn-danger w-100" onclick="cekPassword('PUTRI ADIATUL MAHIRAH123','https://drive.google.com/file/d/1sui4Sx3VJLxwAY2VUdQyKnjQdSLv1G_V/view')">Buka File</button>
+    </div></div></div>
+
+    <!-- 16 -->
+    <div class="col-md-4 col-lg-3"><div class="card text-center custom-card"><div class="card-body">
+    <h5 class="nama">RIDO RISKI ARLUTO</h5>
+    <button class="btn btn-primary w-100" onclick="cekPassword('RIDO RISKI ARLUTO123','https://drive.google.com/file/d/186LoOHCu0EY3VpjL3uZNO-5pm7aMamCp/view')">Buka File</button>
+    </div></div></div>
+
+    <!-- 17 -->
+    <div class="col-md-4 col-lg-3"><div class="card text-center custom-card"><div class="card-body">
+    <h5 class="nama">RISKI</h5>
+    <button class="btn btn-success w-100" onclick="cekPassword('RISKI123','https://drive.google.com/file/d/1PNXRsC5LnjKveva5YxljiPbVf5cSbakR/view')">Buka File</button>
+    </div></div></div>
+
+    <!-- 18 -->
+    <div class="col-md-4 col-lg-3"><div class="card text-center custom-card"><div class="card-body">
+    <h5 class="nama">RUSIAH</h5>
+    <button class="btn btn-danger w-100" onclick="cekPassword('RUSIAH123','https://drive.google.com/file/d/1rxJug7H7XpwbZnA8728b_tXy1czfzlo9/view')">Buka File</button>
+    </div></div></div>
+
+    <!-- 19 -->
+    <div class="col-md-4 col-lg-3"><div class="card text-center custom-card"><div class="card-body">
+    <h5 class="nama">SITI MAISAROH</h5>
+    <button class="btn btn-primary w-100" onclick="cekPassword('SITI MAISAROH123','https://drive.google.com/file/d/1M5fdKzNWIgOGz-6QwetN1trBrFwJValw/view')">Buka File</button>
+    </div></div></div>
+
+    <!-- 20 -->
+    <div class="col-md-4 col-lg-3"><div class="card text-center custom-card"><div class="card-body">
+    <h5 class="nama">SITI WERIKATUL JENNAH</h5>
+    <button class="btn btn-success w-100" onclick="cekPassword('SITI WERIKATUL JENNAH123','https://drive.google.com/file/d/1eXbJpr0Mhwt3Y05K_6mcNDdhQLvr_8jC/view')">Buka File</button>
+    </div></div></div>
+
+    <!-- 21 -->
+    <div class="col-md-4 col-lg-3"><div class="card text-center custom-card"><div class="card-body">
+    <h5 class="nama">SUBIYANTO</h5>
+    <button class="btn btn-danger w-100" onclick="cekPassword('SUBIYANTO123','https://drive.google.com/file/d/1ADxhoXhSs3cUgFtl8rAo6m-VzyB7SQ4u/view')">Buka File</button>
+    </div></div></div>
+
+    <!-- 22 -->
+    <div class="col-md-4 col-lg-3"><div class="card text-center custom-card"><div class="card-body">
+    <h5 class="nama">VIKA AULIA PUTRI</h5>
+    <button class="btn btn-danger w-100" onclick="cekPassword('VIKA AULIA PUTRI123','https://drive.google.com/file/d/1ZZKH13686eLMqv8QW8KDq7PfUraxoMW_/view')">Buka File</button>
+    </div></div></div>
+
   </div>
 </div>
 
-        <div class="col-md-4">
-      <div class="card text-center shadow">
-        <div class="card-body">
-          <h5>MOHAMMAD FADLILAH</h5>
-          <button class="btn btn-primary" onclick="cekPassword('MOHAMMAD FADLILAH123','https://drive.google.com/file/d/1tpAsG-x1pWQdH4sBQoEQSLK98CEntFGp/view?usp=drive_link')">Buka File</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- FILE 2 -->
-    <div class="col-md-4">
-      <div class="card text-center shadow">
-        <div class="card-body">
-          <h5>MOHAMMAD FIRMANSYAH</h5>
-          <button class="btn btn-success" onclick="cekPassword('MOHAMMAD FIRMANSYAH123','https://drive.google.com/file/d/1mp8Ea6ZehblmyLYWYt6rd2gTYqppwJSL/view?usp=drive_link')">Buka File</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- FILE 3 -->
-    <div class="col-md-4">
-      <div class="card text-center shadow">
-        <div class="card-body">
-          <h5>MUHAMMAD DAHLAN</h5>
-          <button class="btn btn-danger" onclick="cekPassword('MUHAMMAD DAHLAN123','https://drive.google.com/file/d/18uuH8nLqz4vDZ-toOTkwGo2LIqAdDlCc/view?usp=drive_link')">Buka File</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-        <div class="col-md-4">
-      <div class="card text-center shadow">
-        <div class="card-body">
-          <h5>MUHAMMAD DWI BAGUS</h5>
-          <button class="btn btn-primary" onclick="cekPassword('MUHAMMAD DWI BAGUS123','https://drive.google.com/file/d/1wWwOY85F4HIPD-JuxsnphdqdaIk2YHrl/view?usp=drive_link')">Buka File</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- FILE 2 -->
-    <div class="col-md-4">
-      <div class="card text-center shadow">
-        <div class="card-body">
-          <h5>MUHAMMAD GILANG</h5>
-          <button class="btn btn-success" onclick="cekPassword('MUHAMMAD GILANG123','https://drive.google.com/file/d/1qwzbQuqDg1Lc-7-NhdK7-s3-_zUxwQ4R/view?usp=drive_link')">Buka File</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- FILE 3 -->
-    <div class="col-md-4">
-      <div class="card text-center shadow">
-        <div class="card-body">
-          <h5>MUHAMMAD ILHAMULLAH</h5>
-          <button class="btn btn-danger" onclick="cekPassword('MUHAMMAD ILHAMULLAH123','https://drive.google.com/file/d/1eAXFa6TcokVvMLtr42nqGYG-4mSD_3-B/view?usp=drive_link')">Buka File</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- SCRIPT PASSWORD -->
 <script>
 function cekPassword(passwordBenar, linkFile) {
   let input = prompt("Masukkan kata sandi:");
